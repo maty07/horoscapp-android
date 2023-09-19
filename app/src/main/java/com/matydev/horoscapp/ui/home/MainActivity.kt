@@ -1,4 +1,4 @@
-package com.matydev.horoscapp
+package com.matydev.horoscapp.ui.home
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
