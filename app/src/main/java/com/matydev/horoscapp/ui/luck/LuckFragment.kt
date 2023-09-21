@@ -1,22 +1,26 @@
-package com.matydev.horoscapp.ui.home.horoscope
+package com.matydev.horoscapp.ui.luck
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.matydev.horoscapp.databinding.FragmentHoroscopeBinding
+import com.matydev.horoscapp.databinding.FragmentLuckBinding
+import dagger.hilt.android.AndroidEntryPoint
 
-class HoroscopeFragment : Fragment() {
+@AndroidEntryPoint
+class LuckFragment : Fragment() {
 
-    private var _binding: FragmentHoroscopeBinding? = null
+    private var _binding: FragmentLuckBinding? = null
     private val binding get() = _binding!!
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _binding = FragmentHoroscopeBinding.inflate(layoutInflater, container, false)
+        _binding = FragmentLuckBinding.inflate(layoutInflater, container, false)
         return binding.root
+
     }
 
 
